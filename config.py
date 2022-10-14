@@ -1,12 +1,12 @@
+import os
 #### Start of settings you ned to change ####
 # Catalog Sets to be obfuscated
 # CSV string, e.g. '14,12,3'
 IN_CS_IDS = '1'
-# Path for application database
-# THIS PATH MUST EXIST BEFORE STARTING THE SERVICE
-DATA_DIR = '/opt/obfuscator/data/'
 #### End of settings you ned to change   ####
 
+# Path for application database
+DATA_DIR = os.getcwd() + '/data/'
 
 # Catalog set identifier
 CS_TAG = 'cs_cols'
